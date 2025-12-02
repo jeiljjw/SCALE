@@ -14,72 +14,92 @@
     <link rel="apple-touch-icon" href="icon-192.png">
 </head>
 <body>
-    <div class="container">
-        <h1>SCALE CONVERTER</h1>
-        
-        
-        <div class="sections-wrapper">
-            <div class="input-section">
-                <h2>입력 범위</h2>
-                <div class="input-group">
-                    <label for="inputMin">최소:</label>
-                    <input type="number" id="inputMin" step="any" placeholder="0">
-                </div>
-                <div class="input-group">
-                    <label for="inputValue">입력:</label>
-                    <input type="number" id="inputValue" step="any" placeholder="13824">
-                </div>
-                <div class="input-group">
-                    <label for="inputMax">최대:</label>
-                    <input type="number" id="inputMax" step="any" placeholder="27648">
-                </div>
-                <div class="visualization-bar">
-                    <div class="bar-container">
-                        <div class="bar-background"></div>
-                        <div class="bar-fill" id="inputBarFill"></div>
-                        <div class="bar-marker" id="inputMarker">
-                            <span class="marker-value" id="inputMarkerValue">50</span>
+    <!-- 상단배너 -->
+    <header class="top-banner">
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit = "DAN-cUSa3vQgxm8oAhKc"
+        data-ad-width = "320"
+        data-ad-height = "50"></ins>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="main-content">
+        <div class="container">
+            <h1>SCALE CONVERTER</h1>
+
+
+            <div class="sections-wrapper">
+                <div class="input-section">
+                    <h2>입력 범위</h2>
+                    <div class="input-group">
+                        <label for="inputMin">최소:</label>
+                        <input type="number" id="inputMin" step="any" placeholder="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="inputValue">입력:</label>
+                        <input type="number" id="inputValue" step="any" placeholder="13824">
+                    </div>
+                    <div class="input-group">
+                        <label for="inputMax">최대:</label>
+                        <input type="number" id="inputMax" step="any" placeholder="27648">
+                    </div>
+                    <div class="visualization-bar">
+                        <div class="bar-container">
+                            <div class="bar-background"></div>
+                            <div class="bar-fill" id="inputBarFill"></div>
+                            <div class="bar-marker" id="inputMarker">
+                                <span class="marker-value" id="inputMarkerValue">50</span>
+                            </div>
+                        </div>
+                        <div class="bar-labels">
+                            <span id="inputMinLabel">0</span>
+                            <span id="inputMaxLabel">100</span>
                         </div>
                     </div>
-                    <div class="bar-labels">
-                        <span id="inputMinLabel">0</span>
-                        <span id="inputMaxLabel">100</span>
+                </div>
+
+                <div class="output-section">
+                    <h2>출력 범위</h2>
+                    <div class="input-group">
+                        <label for="outputMin">최소:</label>
+                        <input type="number" id="outputMin" step="any" placeholder="4">
+                    </div>
+                    <div class="input-group">
+                        <label for="outputValue">출력:</label>
+                        <input type="number" id="outputValue" step="any" placeholder="12" readonly>
+                    </div>
+                    <div class="input-group">
+                        <label for="outputMax">최대:</label>
+                        <input type="number" id="outputMax" step="any" placeholder="20">
+                    </div>
+                    <div class="visualization-bar">
+                        <div class="bar-container">
+                            <div class="bar-background"></div>
+                            <div class="bar-fill" id="outputBarFill"></div>
+                            <div class="bar-marker" id="outputMarker">
+                                <span class="marker-value" id="outputMarkerValue">0.5</span>
+                            </div>
+                        </div>
+                        <div class="bar-labels">
+                            <span id="outputMinLabel">0</span>
+                            <span id="outputMaxLabel">1</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="output-section">
-                <h2>출력 범위</h2>
-                <div class="input-group">
-                    <label for="outputMin">최소:</label>
-                    <input type="number" id="outputMin" step="any" placeholder="4">
-                </div>
-                <div class="input-group">
-                    <label for="outputValue">출력:</label>
-                    <input type="number" id="outputValue" step="any" placeholder="12" readonly>
-                </div>
-                <div class="input-group">
-                    <label for="outputMax">최대:</label>
-                    <input type="number" id="outputMax" step="any" placeholder="20">
-                </div>
-                <div class="visualization-bar">
-                    <div class="bar-container">
-                        <div class="bar-background"></div>
-                        <div class="bar-fill" id="outputBarFill"></div>
-                        <div class="bar-marker" id="outputMarker">
-                            <span class="marker-value" id="outputMarkerValue">0.5</span>
-                        </div>
-                    </div>
-                    <div class="bar-labels">
-                        <span id="outputMinLabel">0</span>
-                        <span id="outputMaxLabel">1</span>
-                    </div>
-                </div>
-            </div>
         </div>
+    </main>
 
-    </div>
+    <!-- 하단배너 -->
+    <footer class="bottom-banner">
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit = "DAN-UmUKZfl1tJD0qvWE"
+        data-ad-width = "320"
+        data-ad-height = "50"></ins>
+    </footer>
 
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <script src="script.js"></script>
 </body>
 </html>

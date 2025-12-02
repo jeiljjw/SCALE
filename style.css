@@ -10,9 +10,9 @@ body {
     background-size: cover;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 body::before {
@@ -24,6 +24,41 @@ body::before {
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
     z-index: -1;
+}
+
+/* 배너 섹션 스타일 */
+.top-banner, .bottom-banner {
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.top-banner {
+    padding-top: 0px;
+}
+
+.bottom-banner {
+    padding-bottom: 0px;
+}
+
+/* 메인 콘텐츠 스타일 */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* 카카오 배너 스타일 */
+.kakao_ad_area {
+    display: block !important;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    max-width: 320px;
 }
 
 .container {
