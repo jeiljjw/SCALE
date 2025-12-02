@@ -2,7 +2,7 @@
   "name": "SCALE",
   "short_name": "Range Converter",
   "description": "Calculator app that converts values from input range to output range",
-  "start_url": "/",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#667eea",
